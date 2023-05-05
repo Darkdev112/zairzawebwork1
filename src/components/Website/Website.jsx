@@ -1,18 +1,16 @@
-import React from 'react'
-import HeaderTemp from '../Temp/HeaderTemp'
-import FooterTemp from '../Temp/FooterTemp'
-import DescriptionTemp from '../Temp/DescriptionTemp'
-import CardTemp from '../Temp/CardTemp'
-import FormTemp from '../Temp/FormTemp'
+import React, { useState } from 'react'
+import "./Website.css"
+import { useDrop } from 'react-dnd'
+import { sidecom } from '../../data/sidecom'
+import DropComponent from '../DropComponent/DropComponent'
 
 const Website = () => {
+  const [target, setTarget] = useState(sidecom);
   return (
-    <div className='text-gray-100'>
-        <HeaderTemp/>
-        <DescriptionTemp/>
-        <FormTemp/>
-        <CardTemp/>
-        <FooterTemp/>
+    <div className={`overflow-y-scroll overflow-x-clip max-h-full scrollbar-hide`} >
+        {target.map((targetItem) => {
+          return  <DropComponent key={targetItem.id} targetItem={targetItem} target={target} setTarget={setTarget}/>
+        })}
     </div>
   )
 }

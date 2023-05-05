@@ -12,7 +12,7 @@ const Sidebar = () => {
           </p>
           <div className='rounded-md p-2 w-full h-full'>
               {sidecom.map((item) => (
-                <SideItem key={item.id} alias={item.alias}/>
+                <SideItem key={item.id} item={item}/>
               ))}
           </div>
       </div>

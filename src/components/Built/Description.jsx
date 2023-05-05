@@ -2,7 +2,7 @@ import React from 'react'
 
 const Description = () => {
     return (
-        <section className="text-gray-600 body-font overflow-hidden">
+        <section className="text-gray-600 body-font overflow-hidden bg-teal-600 p-5 m-auto rounded-lg">
             <div className="container px-5 py-24 mx-auto">
                 <div className="-my-8 divide-y-2 divide-gray-100">
                     <div className="py-8 flex flex-wrap md:flex-nowrap">

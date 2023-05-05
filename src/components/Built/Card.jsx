@@ -2,8 +2,8 @@ import React from 'react'
 
 const Card = () => {
     return (
-        <div className="max-w-sm rounded overflow-hidden shadow-lg">
-            <img className="w-full" src="/default.jpg" alt="Sunset in the mountains"/>
+        <div className="max-w-sm overflow-hidden shadow-lg bg-teal-600 rounded-lg m-auto p-5">
+            <img className="w-full h-[300px]" src="/default.jpg" alt="Sunset in the mountains"/>
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
                     <p className="text-gray-700 text-base">
